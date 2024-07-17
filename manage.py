@@ -143,3 +143,62 @@ print(" ")
 print("############# RANGES #################################")
 print(" ")
 
+start = 0
+stop   = 101
+step = 2
+
+my_range = range(start, stop, step)
+
+total = []
+
+for number in my_range:
+    total.append(number ** 2)
+print(total)
+
+######## DICTIONARY #################################
+print(" ")
+print("############# DICTIONARY #################################")
+print(" ")
+
+me = {'name': 'Daniel', age: '25'}
+print(me["name"])
+
+me["hobbies"] = ['coding', 'problem solving']
+
+print(me)
+
+me["hobbies"].append('sleeping')
+
+print(me)
+
+my_string = 'I love coding with veroskills'
+letter = {};
+
+for char in my_string:
+    # letter[char] = 'hi'
+    if char not in letter.keys():
+        letter[char] = 1
+    else:
+        letter[char] += 1
+print(letter)
+
+
+######## CLASSES #################################
+print(" ")
+print("############# CLASSES #################################")
+print(" ")
+
+
+class Account:
+    def __init__(self, accountType, balance):
+        self.accountType = accountType
+        self.balance = balance
+    def deposit(self, amount):
+        self.balance += amount
+
+checking = Account('checking', 5000)
+
+checking.deposit(3000)
+
+print(checking.accountType, 'account type')
+print(checking.balance, 'balance')
