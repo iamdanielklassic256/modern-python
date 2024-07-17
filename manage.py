@@ -202,3 +202,59 @@ checking.deposit(3000)
 
 print(checking.accountType, 'account type')
 print(checking.balance, 'balance')
+
+
+
+######## MODULES #################################
+print(" ")
+print("############# MODULES #################################")
+print(" ")
+
+from manage import me
+
+# print(dir(manage))
+print(me)
+
+
+######## PYTHON STANDARD LIBARARY #################################
+print(" ")
+print("############# PYTHON STANDARD LIBARARY #################################")
+print(" ")
+
+import random
+
+# help(random
+# )
+print(random.randint(1,6))
+
+
+# import calendar
+
+# def print_calendar(year):
+#     # Create a plain text calendar
+#     cal = calendar.TextCalendar(calendar.SUNDAY)
+    
+#     # Print the calendar for each month
+#     for month in range(1, 13):
+#         month_calendar = cal.formatmonth(year, month)
+#         print(month_calendar)
+
+# # Print the calendar for the year 2024
+# print_calendar(2024)
+
+
+######## CLASSES PART TWO #################################
+print(" ")
+print("############# CLASSES PART TWO #################################")
+print(" ")
+
+
+class Dog:
+    pass
+
+dog = Dog()
+
+# print(dir(dog))
+
+my_name = 'Daniel'
+print(my_name[0:])
